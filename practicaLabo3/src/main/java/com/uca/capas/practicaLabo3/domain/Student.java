@@ -8,7 +8,9 @@ public class Student {
 	private String carrera;
 	private Boolean estado;
 	
-	
+	public Student() {
+		
+	}
 	
 	public Student(String nombre, String apellido, String fechaEntrada, String carrera, Boolean estado) {
 		super();

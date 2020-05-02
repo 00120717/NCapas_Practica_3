@@ -10,12 +10,12 @@
 
 <form th:action="@{/dataform}" th:object="${student}" method="post">
 	
-	<label>Nombre: </label><input type="text" th:fiel="*{nombre}"><br>
-	<label>Apellido: </label><input type="text" th:fiel="*{apellido}"><br>
-	<label>Fecha de Entrada: </label><input type="date" th:fiel="*{fechaEntrada}"><br>
-	<label>Carrera: </label><input type="text" th:fiel="*{carrera}"><br>
-	<label>Activo: </label><input type="radio" th:fiel="*{estado}" th:value="${true}"><br>
-	<label>Inactivo: </label><input type="radio" th:fiel="*{estado}" th:value="${false}"><br>
+	<label>Nombre: </label><input type="text" th:field="*{nombre}"><br>
+	<label>Apellido: </label><input type="text" th:field="*{apellido}"><br>
+	<label>Fecha de Entrada: </label><input type="date" th:field="*{fechaEntrada}"><br>
+	<label>Carrera: </label><input type="text" th:field="*{carrera}"><br>
+	<label>Activo: </label><input type="radio" th:field="*{estado}" th:value="${true}"><br>
+	<label>Inactivo: </label><input type="radio" th:field="*{estado}" th:value="${false}"><br>
 	
 	<input type="submit" value="Enviar">
 	
