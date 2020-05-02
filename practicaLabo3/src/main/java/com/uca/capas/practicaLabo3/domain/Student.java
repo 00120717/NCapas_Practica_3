@@ -8,6 +8,17 @@ public class Student {
 	private String carrera;
 	private Boolean estado;
 	
+	
+	
+	public Student(String nombre, String apellido, String fechaEntrada, String carrera, Boolean estado) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.fechaEntrada = fechaEntrada;
+		this.carrera = carrera;
+		this.estado = estado;
+	}
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -39,5 +50,7 @@ public class Student {
 		this.estado = estado;
 	}
 	
-	
+	public String delegateEstado() {
+		return estado ? "Activo":"Inactivo";
+	}
 }
